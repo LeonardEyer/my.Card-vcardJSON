@@ -1,0 +1,67 @@
+{
+    "typeFormat" : "com.mydotcard.contact.0.0.1",
+    "contact" : {
+        "identifier" : "7210naiusdkkll89öoi3fks3jkf",
+        "contactType" : "person/organzation",
+        "birthday" : "2012-04-23T18:25:43.511Z",
+        "namePrefix" : "Dr.",
+        "givenName" : "Tim",
+        "middleName" : "Timo",
+        "familyName" : "Fleckenstein",
+        "previousFamilyName" : "Fleckstone",
+        "nameSuffix" : "Jr.",
+        "nickname" : "Timi",
+        "organizationName" : "Gesellschaft für Informatik",
+        "departmentName" : "Theoretische Informatik",
+        "jobTitle" : "Senior Developer",
+        "note" : "My best friend :-)",
+        "imageData" : "öldkjafjöalksdjöflkadsjföalksdjföaslkdfjaösldkfjasödlkfjaödflkjasölkdfj...",
+        "socialProfiles" : [
+            {
+                "identifier" : "socialProfiles1",
+                "service" : "Facebook",
+                "url" : "https://facebook.com/tim.flecki"
+            },
+            {
+                "identifier" : "socialProfiles2",
+                "service" : "Snapchat",
+                "url" : "https://snapchat.com/add/tim.flecki"
+            }
+        ],
+        "phoneNumbers" : [
+            {
+                "identifier" : "phoneNumber1",
+                "label" : "Home",
+                "phoneNumber" : "+490163249732"
+            }
+        ],
+        "urls" : [
+            {
+                "identifier" : "url1",
+                "label" : "Company Website",
+                "url" : "https://tim-flecky-international-corparation.com"
+            }
+        ],
+        "postalAddresses" : [
+            {
+                "identifier" : "address1",
+                "label" : "Private",
+                "data" : {
+                    "street" : "Main Street",
+                    "city" : "Berlin",
+                    "state" : "Berlin",
+                    "postalCode" : "10969",
+                    "country" : "Germany",
+                    "isoCountryCode" : "DE"
+                }
+            }
+        ],
+        "emails" : [
+            {
+                "identifier" : "email1",
+                "label" : "business",
+                "mail" : "timi@flecky-international.com"
+            }
+        ]
+    }
+}
