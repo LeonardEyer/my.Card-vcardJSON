@@ -1,0 +1,22 @@
+{
+  "name": "vcardjson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardEyer/my.Card-vcardJSON.git"
+  },
+  "author": "Leonard Eyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonardEyer/my.Card-vcardJSON/issues"
+  },
+  "homepage": "https://github.com/LeonardEyer/my.Card-vcardJSON#readme",
+  "dependencies": {
+    "vcf": "^2.0.1"
+  }
+}
