@@ -10,7 +10,7 @@ vCard.prototype.addPropObj = function ({ key, value, params = {} }) {
   this.add(key, value, params)
 }
 
-const parseMyCardJSON = async (cardJSON) => {
+const parseMyCardJSON = (cardJSON) => {
 
   const { contact } = cardJSON
   const vcf = new vCard()
@@ -23,7 +23,7 @@ const parseMyCardJSON = async (cardJSON) => {
     const element = contact[contactProperty]
 
     // If the element is not set we do not need to add a property
-    if(!element) continue
+    if(element.length == 0) continue
 
     if (isArray(element)) {
 

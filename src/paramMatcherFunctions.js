@@ -29,6 +29,12 @@ const paramMatcherFunctions = {
     key: 'email',
     value: mail,
     params: { type: label }
+  }),
+
+  imageData: (value) => ({
+    key: 'photo',
+    value: value,
+    params: { encoding: 'b', type: 'jpeg' }
   })
 }
 

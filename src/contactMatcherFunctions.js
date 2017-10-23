@@ -11,7 +11,6 @@ const contactMatcherFunctions = {
   departmentName: cmf('role'),
   jobTitle: cmf('title'),
   note: cmf('note'),
-  imageData: cmf('photo'),
   previousFamilyName: cmf('x-maidenname'),
   nickname: cmf('nickname')  
 }
