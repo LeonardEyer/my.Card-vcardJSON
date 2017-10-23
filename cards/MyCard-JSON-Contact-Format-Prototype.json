@@ -33,6 +33,11 @@
                 "identifier" : "phoneNumber1",
                 "label" : "Home",
                 "phoneNumber" : "+490163249732"
+            },
+            {
+              "identifier": "phoneNumber2",
+              "label": "mobile",
+              "phoneNumber": "+49016329831"
             }
         ],
         "urls" : [
@@ -54,6 +59,18 @@
                     "country" : "Germany",
                     "isoCountryCode" : "DE"
                 }
+            },
+            {
+              "identifier": "address2",
+              "label": "Publice",
+              "data": {
+                "street": "Some Street",
+                "city": "Berlin",
+                "state": "Berlin",
+                "postalCode": "12345",
+                "country": "Germany",
+                "isoCountryCode": "DE"
+              }
             }
         ],
         "emails" : [
@@ -61,6 +78,11 @@
                 "identifier" : "email1",
                 "label" : "business",
                 "mail" : "timi@flecky-international.com"
+            },
+            {
+              "identifier": "email2",
+              "label": "private",
+              "mail": "timi@flecky-national.com"
             }
         ]
     }
