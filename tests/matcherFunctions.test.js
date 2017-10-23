@@ -16,8 +16,8 @@ describe('matcherFunctions', () => {
     for (let i = 0; i < resultArray.length; i++) {
 
       expect(resultArray[i].value).to.equal(socialProfiles[i].url)
-      expect(resultArray[i].key).to.equal('URL')
-      expect(resultArray[i].params.label).to.equal(socialProfiles[i].service)
+      expect(resultArray[i].key).to.equal('url')
+      expect(resultArray[i].params.type).to.equal(socialProfiles[i].service)
       
     }
 

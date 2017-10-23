@@ -13,21 +13,6 @@ const contactMatcherFunctions = {
   imageData: cmf('photo')
 }
 
-// EXPERIMENtiNG ##############################################################
-
-const noOP = () => { }
-
-const nameConstructorFunctions = {
-  namePrefix: noOP,
-  givenName: noOP,
-  middleName: noOP,
-  familyName: noOP,
-  previousFamilyName: noOP,
-  nameSuffix: noOP,
-}
-
-// #############################################################################
-
 const matcherFunctions = {
 
   ...contactMatcherFunctions,
@@ -56,7 +41,7 @@ const matcherFunctions = {
     params: { type: label }
   }),
 
-  email: ({ label, mail }) => ({
+  email: ({ mail, label }) => ({
     key: 'email',
     value: mail,
     params: { type: label }
@@ -64,8 +49,6 @@ const matcherFunctions = {
 
 }
 
-const matcher = {
+module.exports = {
   matcherFunctions
 }
-
-module.exports = matcher
