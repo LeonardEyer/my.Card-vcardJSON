@@ -35,19 +35,19 @@ const matcherFunctions = {
   socialProfile: ({ url, service }) => ({
     key: 'url',
     value: url,
-    params: { label: service }
+    params: { type: service }
   }),
 
   url: ({ url, label }) => ({
     key: 'url',
     value: url,
-    params: { label: label }
+    params: { type: label }
   }),
 
   phoneNumber: ({ phoneNumber, label }) => ({
     key: 'tel',
     value: phoneNumber,
-    params: { label: label }
+    params: { type: label }
   }),
 
   postalAddress: ({ data, label }) => ({
@@ -57,7 +57,7 @@ const matcherFunctions = {
   }),
 
   email: ({ label, mail }) => ({
-    key: 'mail',
+    key: 'email',
     value: mail,
     params: { type: label }
   })

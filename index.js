@@ -19,29 +19,31 @@ const main = async () => {
   const contact = cardJSON.contact
 
   const vcf = new vCard()
-  vCard.prototype.addObj = ({ key, value, params }) => vCard.property.add(key, value, params)
+  vCard.prototype.addPropObj = function ({ key, value, params = {} }) {
+    this.add(key, value, params)
+  }
 
   for (var contactProperty in contact) {
 
     const element = contact[contactProperty]
 
     if (isArray(element)) {
-      
+
       element
         .map(profile => matcherFunctions[singular(contactProperty)](profile))
-        .map(({ key, value, params }) => vcf.add(key, value, params))
+        .map(prop => vcf.addPropObj(prop))
 
     } else if (matcherFunctions.hasOwnProperty(contactProperty)) {
 
-      const {key, value} = matcherFunctions[contactProperty](element)
-      vcf.add(key, value)
+      const prop = matcherFunctions[contactProperty](element)
+      vcf.addPropObj(prop)
     }
   }
 
 
   const newCardIdentifier = sampleCardIdentifier
-  writeVCF(newCardIdentifier, vcf.toString('4.0'))
-  console.log(vcf.toString('4.0'))
+  writeVCF(newCardIdentifier, vcf.toString('3.0'))
+  console.log(vcf.toString('3.0'))
 
 }
 

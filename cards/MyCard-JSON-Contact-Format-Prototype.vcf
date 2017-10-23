@@ -1,5 +1,5 @@
 BEGIN:VCARD
-VERSION:4.0
+VERSION:3.0
 IDENTIFIER:7210naiusdkkll89öoi3fks3jkf
 KIND:person/organzation
 BDAY:2012-04-23T18:25:43.511Z
@@ -10,13 +10,13 @@ TITLE:Senior Developer
 NOTE:My best friend :-)
 PHOTO:öldkjafjöalksdjöflkadsjföalksdjföaslkdfjaösldkfjasödlkfjaödflkjasö
  lkdfj...
-URL;LABEL=Facebook:https://facebook.com/tim.flecki
-URL;LABEL=Snapchat:https://snapchat.com/add/tim.flecki
-URL;LABEL=Company Website:https://tim-flecky-international-corparation.com
-TEL;LABEL=Home:+490163249732
-TEL;LABEL=mobile:+49016329831
+URL;TYPE=Facebook:https://facebook.com/tim.flecki
+URL;TYPE=Snapchat:https://snapchat.com/add/tim.flecki
+URL;TYPE=Company Website:https://tim-flecky-international-corparation.com
+TEL;TYPE=Home:+490163249732
+TEL;TYPE=mobile:+49016329831
 ADR;TYPE=Private:Main Street;Berlin;Berlin;10969;Germany;DE
 ADR;TYPE=Publice:Some Street;Berlin;Berlin;12345;Germany;DE
-MAIL;TYPE=business:timi@flecky-international.com
-MAIL;TYPE=private:timi@flecky-national.com
+EMAIL;TYPE=business:timi@flecky-international.com
+EMAIL;TYPE=private:timi@flecky-national.com
 END:VCARD
