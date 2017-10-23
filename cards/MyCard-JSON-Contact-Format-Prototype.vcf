@@ -1,8 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
+N:Fleckenstein;Tim;Timo;Dr.;Jr.
 IDENTIFIER:7210naiusdkkll89öoi3fks3jkf
 KIND:person/organzation
 BDAY:2012-04-23T18:25:43.511Z
+X-MAIDENNAME:Fleckstone
 NICKNAME:Timi
 ORG:Gesellschaft für Informatik
 ROLE:Theoretische Informatik

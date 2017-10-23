@@ -4,10 +4,12 @@ const { promisifyAll } = require('bluebird')
 const { readFileAsync, writeFileAsync } = promisifyAll(require('fs'))
 const { singular } = require('pluralize')
 const { matcherFunctions } = require('./src/matcher')
+const { constructName } = require('./src/contactNameConstructor')
 
 const readJSON = identifier => readFileAsync('./cards/' + identifier + '.json').then(JSON.parse)
 const writeVCF = (identifier, data) => writeFileAsync('./cards/' + identifier + '.vcf', data)
 const isArray = a => (!!a) && (a.constructor === Array)
+
 vCard.prototype.addPropObj = function ({ key, value, params = {} }) {
   this.add(key, value, params)
 }
@@ -16,10 +18,12 @@ const main = async () => {
 
   const sampleCardIdentifier = 'MyCard-JSON-Contact-Format-Prototype'
   const cardJSON = await readJSON(sampleCardIdentifier)
-  const contact = cardJSON.contact
+  const { contact } = cardJSON
 
   const vcf = new vCard()
 
+  vcf.add('n', constructName(contact))
+  
   for (var contactProperty in contact) {
 
     const element = contact[contactProperty]
@@ -37,11 +41,9 @@ const main = async () => {
     }
   }
 
-
   const newCardIdentifier = sampleCardIdentifier
   writeVCF(newCardIdentifier, vcf.toString('3.0'))
   console.log(vcf.toString('3.0'))
-
 }
 
 main()
