@@ -21,6 +21,10 @@ const parseMyCardJSON = async (cardJSON) => {
   for (var contactProperty in contact) {
 
     const element = contact[contactProperty]
+
+    // If the element is not set we do not need to add a property
+    if(!element) continue
+
     if (isArray(element)) {
 
       // Generate props of every element in array and add it to our vcf
