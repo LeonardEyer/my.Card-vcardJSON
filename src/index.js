@@ -1,8 +1,8 @@
 const vCard = require('vcf')
 
 const { singular } = require('pluralize')
-const { matcherFunctions } = require('./src/matcher')
-const { constructName } = require('./src/contactNameConstructor')
+const { matcherFunctions } = require('./matcher')
+const { constructName } = require('./contactNameConstructor')
 
 const isArray = a => (!!a) && (a.constructor === Array)
 

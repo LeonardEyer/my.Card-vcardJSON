@@ -1,6 +1,6 @@
 const { expect } = require('chai')
 
-const { parseMyCardJSON } = require('../index')
+const { parseMyCardJSON } = require('../src')
 const { promisifyAll } = require('bluebird')
 const { readFileAsync, writeFileAsync } = promisifyAll(require('fs'))
 
@@ -10,4 +10,4 @@ describe('imageFormatting', () => {
     const vcf = parseMyCardJSON(cardJSON)
     await writeFileAsync('./cards/cardwithimageandmissingfields.vcf', vcf.toString('3.0'))
   })
-})
+})^
