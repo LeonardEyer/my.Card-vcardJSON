@@ -10,4 +10,4 @@ describe('imageFormatting', () => {
     const vcf = parseMyCardJSON(cardJSON)
     await writeFileAsync('./cards/cardwithimageandmissingfields.vcf', vcf.toString('3.0'))
   })
-})^
+})
